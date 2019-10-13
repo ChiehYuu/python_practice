@@ -69,3 +69,33 @@ print("| %3s | %3d  | %3d  | %3d  | %3d  |" % ("王小明",10,67,88,100))
 print("| %3s | %3d  | %3d  | %3d  | %3d  |" % ("李大明",15,73,77,85))
 print("| %3s | %3d  | %3d  | %3d  | %3d  |" % ("吳小敏",3,95,90,80))
 
+#計算與資料型態轉換
+
+#假設變數
+num_1 = 60
+num_2 = 8.752
+num_3 = True
+num_4 = 1
+num_5 = 0
+num_6 = 6
+num_7 = 0.3
+num_8 = -1
+
+#輸出測試
+print(num_1 + num_2)                                                                #整數與浮點數計算，顯示浮點數
+print(int(num_1 + num_2))                                                           #整數與浮點數計算，強制顯示為整數
+print(num_1 + num_3)                                                                #整數與布林資料計算，布林資料True=1，False=0，顯示為整數
+print(float(num_1 + num_3))                                                         #整數與布林資料計算，強制顯示為浮點數
+print(num_3)                                                                        #布林資料輸出，顯示為True/False
+print(num_3 - num_3)                                                                #布林資料計算，顯示為整數
+print(bool(num_3-num_3),end = "\n\n")                                               #布林資料計算，強制顯示為布林資料
+
+#布林資料測試                                                                       #除了0以外，其餘皆顯示True，無論正負
+print(bool(num_1))
+print(bool(num_5))
+print(bool(num_6))
+print(bool(num_7))
+print(bool(num_8),end="\n\n")
+
+#輸入資料
+print("你輸入的數字為：",input("請輸入數字："),sep = "",end = "\n\n")
