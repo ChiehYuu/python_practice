@@ -98,4 +98,7 @@ print(bool(num_7))
 print(bool(num_8),end="\n\n")
 
 #輸入資料
-print("你輸入的數字為：",input("請輸入數字："),sep = "",end = "\n\n")
+number_input_1 = input("請輸入你的第一個數字：")
+number_input_2 = input("請輸入你的第二個數字：")
+print("你輸入的數字為：",number_input_1," & ",number_input_2,sep = "",end = "\n\n")
+
