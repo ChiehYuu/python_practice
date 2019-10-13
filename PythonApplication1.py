@@ -3,7 +3,7 @@
 #Lesson1 Variables Testing
 
 #基礎代數－數值
-price_1 = 80                                                                       #數值變數(整數)
+price_1 = int(80)                                                                   #數值變數(整數)
 price_2 = 80.0                                                                      #數值變數(浮點數)
 print ( price_1,"\n",price_2,sep="" )
 
@@ -59,5 +59,13 @@ print("%8s_顯示為八位字元，字串顯示" % charlie)                     
 print("%8.1s_顯示為八位字元，字串顯示" % charlie)
 print("%8.5s_顯示為八位字元，字串顯示" % charlie)
 
-#變數型式確認
+#變數形式確認                                                                       #type為變數形式確認，可藉由直接宣告處理變數形式      
+price_1 = int (90)
 print(type(flag),type(charlie),type(price_1),type(12),type(250.3),type("Hello World"),sep="\n",end="\n\n") 
+                                                                                    
+#練習一：成績單                                                                     #貼齊格線要測試
+print("| 姓名   | 座號 | 國文 | 英文 | 數學 |")
+print("| %3s | %3d  | %3d  | %3d  | %3d  |" % ("王小明",10,67,88,100))
+print("| %3s | %3d  | %3d  | %3d  | %3d  |" % ("李大明",15,73,77,85))
+print("| %3s | %3d  | %3d  | %3d  | %3d  |" % ("吳小敏",3,95,90,80))
+
