@@ -121,11 +121,58 @@ print("兩數相除，餘數為=",rem_1,sep="",end="\n")
 print("兩數相除，商數為=",quo_1,sep="",end="\n")
 print("次方數為=",exp_1,sep="",end="\n\n")
 
-#布琳關係式
+#布琳關係式                                                                        #資料輸入後儲存在變數內即為布林資料型態，以0或1表示，不會再另外儲存方程式
 fun_a = 16+9==15+7
 fun_b = 3+8==5+6
-print(type(fun_a),fun_a,type(fun_b),fun_b,sep="_&&_",end="\n")
+fun_c = 16+9!=15+7
+fun_d = 3+8!=5+6
+fun_e = 16+9>15+7
+fun_f = 3+8>5+6
+fun_g = 16+9<15+7
+fun_h = 3+8<5+6
+fun_i = 16+9>=15+7
+fun_j = 3+8>=5+6
+fun_k = 16+9<=15+7
+fun_l = 3+8<=5+6
+
+#輸出測試                                                                          #變數本身即為布林資料，故不會顯示方程式
+print("此方程式的格式為：",type(fun_a),"方程式為：",str(fun_a),"顯示為：",fun_a,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_b),"方程式為：",str(fun_b),"顯示為：",fun_b,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_c),"方程式為：",str(fun_c),"顯示為：",fun_c,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_d),"方程式為：",str(fun_d),"顯示為：",fun_d,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_e),"方程式為：",str(fun_e),"顯示為：",fun_e,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_f),"方程式為：",str(fun_f),"顯示為：",fun_f,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_g),"方程式為：",str(fun_g),"顯示為：",fun_g,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_h),"方程式為：",str(fun_h),"顯示為：",fun_h,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_i),"方程式為：",str(fun_i),"顯示為：",fun_i,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_j),"方程式為：",str(fun_j),"顯示為：",fun_j,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_k),"方程式為：",str(fun_k),"顯示為：",fun_k,sep="_",end="\n")
+print("此方程式的格式為：",type(fun_l),"方程式為：",str(fun_l),"顯示為：",fun_l,sep="_",end="\n")
+
+#邏輯運算子                                                                         #測試結果：TFTFFFFFTFTFTTTT
+fun_A = 3>5
+fun_B = 5>3
+fun_C = 6>9
+fun_D = 9>6
+
+an4_1 = not(fun_A)
+an4_2 = not(fun_B)
+an4_3 = not(fun_C)
+an4_4 = not(fun_D)
+an4_5 = (fun_A)and(fun_B)
+an4_6 = (fun_A)and(fun_C)
+an4_7 = (fun_A)and(fun_D)
+an4_8 = (fun_B)and(fun_C)
+an4_9 = (fun_B)and(fun_D)
+an4_10 = (fun_C)and(fun_D)
+an4_11 = (fun_A)or(fun_B)
+an4_12 = (fun_A)or(fun_C)
+an4_13 = (fun_A)or(fun_D)
+an4_14 = (fun_B)or(fun_C)
+an4_15 = (fun_B)or(fun_D)
+an4_16 = (fun_C)or(fun_D)
 
 
+print(an4_1,an4_2,an4_3,an4_4,an4_5,an4_6,an4_7,an4_8,an4_9,an4_10,an4_11,an4_12,an4_13,an4_14,an4_15,an4_16,sep="||",end="\n\n")
 
 
