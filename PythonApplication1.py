@@ -97,8 +97,35 @@ print(bool(num_6))
 print(bool(num_7))
 print(bool(num_8),end="\n\n")
 
-#輸入資料
+#輸入資料                                                                           #輸入後若無限制格式則起始字元格式為字串
 number_input_1 = input("請輸入你的第一個數字：")
 number_input_2 = input("請輸入你的第二個數字：")
 print("你輸入的數字為：",number_input_1," & ",number_input_2,sep = "",end = "\n\n")
+
+#運算測試
+cal_1 = float(input("請輸入第一個數字："))
+cal_2 = float(input("請輸入第二個數字："))
+add_1 = cal_1 + cal_2
+sub_1 = cal_1 - cal_2
+mul_1 = cal_1 * cal_2
+div_1 = cal_1 / cal_2
+rem_1 = cal_1 % cal_2
+quo_1 = cal_1 // cal_2
+exp_1 = cal_1 ** cal_2
+
+print("兩數相加=",add_1,sep="",end="\n")
+print("兩數相減=",sub_1,sep="",end="\n")
+print("兩數相乘=",mul_1,sep="",end="\n")
+print("兩數相除=",div_1,sep="",end="\n")
+print("兩數相除，餘數為=",rem_1,sep="",end="\n")
+print("兩數相除，商數為=",quo_1,sep="",end="\n")
+print("次方數為=",exp_1,sep="",end="\n\n")
+
+#布琳關係式
+fun_a = 16+9==15+7
+fun_b = 3+8==5+6
+print(type(fun_a),fun_a,type(fun_b),fun_b,sep="_&&_",end="\n")
+
+
+
 
