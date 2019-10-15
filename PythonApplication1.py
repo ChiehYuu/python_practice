@@ -175,4 +175,27 @@ an4_16 = (fun_C)or(fun_D)
 
 print(an4_1,an4_2,an4_3,an4_4,an4_5,an4_6,an4_7,an4_8,an4_9,an4_10,an4_11,an4_12,an4_13,an4_14,an4_15,an4_16,sep="||",end="\n\n")
 
+#單向判斷式
 
+score_1 = float(input("請輸入一個數字："))
+
+if(score_1>=60):
+    print("及格",end = "\n\n")
+
+#雙向判斷式
+
+if(score_1>=60):
+    print("及格",end = "\n\n")
+else:
+    print("不及格",end = "\n\n")
+
+#多向判斷式
+
+if(score_1>60):
+    print("及格",end="\n\n")
+elif(score_1==60):
+    print("剛好及格",end="\n\n")
+else:
+    print("不及格",end="\n\n")
+
+#
