@@ -198,4 +198,19 @@ elif(score_1==60):
 else:
     print("不及格",end="\n\n")
 
-#
+#練習二：巢狀迴圈－百貨公司周年慶滿額打折
+
+money_1 = int(input("請輸入您這次的花費金額："))
+
+if(money_1>=10000):
+    if(money_1>=100000):
+        money_1 = money_1*0.8
+    elif(money_1>=50000):
+        money_1 = money_1*0.85
+    elif(money_1>=30000):
+        money_1 = money_1*0.9
+    else:
+        money_1 = money_1*0.95
+    print("您這次的消費金額為：",money_1,sep="",end="\n\n")
+else:
+    print("不好意思你這次消費金額不足，未能打折，金額為：",money_1,sep="",end="\n\n")
