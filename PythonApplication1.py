@@ -214,3 +214,30 @@ if(money_1>=10000):
     print("您這次的消費金額為：",money_1,sep="",end="\n\n")
 else:
     print("不好意思你這次消費金額不足，未能打折，金額為：",money_1,sep="",end="\n\n")
+
+
+#串列測試
+grade_1 = ["王小明",89,77,90],["孫小美",96,80,88],["李大明",76,93,70]
+print(grade_1[0])
+print(grade_1[1][0])
+print(grade_1[2][1])
+print(type(grade_1[0][1]))
+
+grade_2 = range(2,9)
+print(grade_2)
+print(list(grade_2))
+print(range(2,9),end="\n\n")
+
+#for loop
+list_1 = range(1,31)
+for number in list_1:
+    print("座號為：%-3d" % number,sep="\n",end= "\n\n")
+
+#練習三：九九乘法表
+
+for i in range(1,10):
+    for j in range(1,10):
+        print("%2d x %2d = %-3d" %  (i,j,i*j),sep="",end="")
+    print()                                                                 #內層for loop 完成後，換行，再繼續執行loop
+
+
