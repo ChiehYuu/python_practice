@@ -251,6 +251,38 @@ for i in range(1,stage_1):
     else:
         print("本層樓為：%3d 樓" % i,end="\n")
 
+#練習五：找質數
+
+prime_num = int(input("請輸入一個數字："))
+print()
+if (prime_num == 2):
+    print("2為質數!")
+else:
+    for i in range(2,prime_num):
+        if (prime_num % i == 0):
+            print("%5d 不是質數!" % prime_num)
+            break
+    else:
+        print("%5d為一個質數!" % prime_num)
+
+#限定數字內的所有質數
+#for i in range(2,prime_num+1):
+#    if (i==2):
+#       print("在%5d內的質數有以下幾個:" % prime_num)
+#        print("%5d" % i,end=" ")
+#    elif (i>2):
+#        for j in range(2,i+1):
+#            if (i % j == 0):
+#                break
+#            else:
+#                print("%5d" % i,end=" ")
+#                break
+#    else:
+#        print("error")
+print()
+       
+
+        
 
 
 
