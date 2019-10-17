@@ -240,4 +240,17 @@ for i in range(1,10):
         print("%2d x %2d = %-3d" %  (i,j,i*j),sep="",end="")
     print()                                                                 #內層for loop 完成後，換行，再繼續執行loop
 
+#練習四：樓層命名
+
+stage_1 = int(input("請輸入此樓層數："))
+for i in range(1,stage_1):
+    if (i == 4):
+        continue
+    elif(i == 26):
+        break
+    else:
+        print("本層樓為：%3d 樓" % i,end="\n")
+
+
+
 
