@@ -280,7 +280,13 @@ else:
 #    else:
 #        print("error")
 print()
-       
+    
+#while loop
+total = n =0
+while (n<10):
+    n += 1
+    total += n
+print(total)
 
         
 
