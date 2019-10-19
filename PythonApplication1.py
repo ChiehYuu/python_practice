@@ -292,8 +292,9 @@ print(total)
 #append/insert
 list_2 = [0,1,2,3,4,5,6,7,8,9]
 list_2.append(10)
-print(list_2[11])
-list_2.insert[3,11]
+
+print(list_2[10])
+list_2.insert(3,11)
 print(list_2[3])
 
 
