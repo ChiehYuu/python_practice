@@ -297,6 +297,9 @@ print(list_2[10])
 list_2.insert(3,11)
 print(list_2[3])
 
-
+#dict
+dict_1 = {"香蕉":20,"蘋果":45,"葡萄":60}
+print(dict_1["香蕉"])
+print(dict_1["葡萄"])
 
 
