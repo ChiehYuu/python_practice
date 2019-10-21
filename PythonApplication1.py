@@ -301,5 +301,6 @@ print(list_2[3])
 dict_1 = {"香蕉":20,"蘋果":45,"葡萄":60}
 print(dict_1["香蕉"])
 print(dict_1["葡萄"])
-
+dict_1["香蕉"] = 80
+print(dict_1["香蕉"])
 
