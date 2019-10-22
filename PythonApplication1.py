@@ -303,4 +303,4 @@ print(dict_1["香蕉"])
 print(dict_1["葡萄"])
 dict_1["香蕉"] = 80
 print(dict_1["香蕉"])
-
+print(len(dict_1))
