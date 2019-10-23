@@ -304,3 +304,12 @@ print(dict_1["葡萄"])
 dict_1["香蕉"] = 80
 print(dict_1["香蕉"])
 print(len(dict_1))
+
+
+#key value items
+list_keys_1 = list(dict_1.keys())
+list_values_1 = list(dict_1.values())
+for i in range (len(list_keys_1)):
+    print("%5s 的價格是%5d" % (list_keys_1[i],list_values_1[i]))
+
+
