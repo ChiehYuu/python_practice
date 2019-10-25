@@ -368,3 +368,17 @@ print()
 print(dict_1.get("香蕉"))
 print(dict_1.get("鳳梨",100))
 
+
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+#test for mac air 1025
+
+
