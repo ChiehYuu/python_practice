@@ -265,7 +265,7 @@ for i in range(1,stage_1):
 
 #練習五：找質數
 
-prime_num = int(input("請輸入一個數字："))
+prime_num = int(input("請輸入一個大於1的數字："))
 print()
 if (prime_num == 2):
     print("2為質數!")
@@ -276,21 +276,17 @@ else:
             break
     else:
         print("%5d為一個質數!" % prime_num)
+print()
 
-#限定數字內的所有質數
-#for i in range(2,prime_num+1):
-#    if (i==2):
-#       print("在%5d內的質數有以下幾個:" % prime_num)
-#        print("%5d" % i,end=" ")
-#    elif (i>2):
-#        for j in range(2,i+1):
-#            if (i % j == 0):
-#                break
-#            else:
-#                print("%5d" % i,end=" ")
-#                break
-#    else:
-#        print("error")
+for i in range(2,prime_num):
+    if (prime_num == 2):
+            print("在5%d內的質數有以下這些：\n2" % prime_num)
+    else:
+            for j in range(2,i):
+                if(i % j == 0):
+                    break
+            else:
+                print("%5d" % i)
 print()
     
 #while loop
