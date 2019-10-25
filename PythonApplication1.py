@@ -295,7 +295,51 @@ while (n<10):
     n += 1
     total += n
 print(total)
+print()
 
+#list測試
+list_test_1 = [1,2,3,4,5,6,7,8]
+list_extend_1 = [9,10,11]
+
+list_test_2 = list_test_1*2
+print(list_test_2)
+
+print(list_test_1[3:6])
+print(list_test_1[1:8:2])
+
+del list_test_2[0:8]                                                        #刪除第a~b項
+print(list_test_2)
+
+del list_test_2[0:8:2]                                                      #刪除第a~b項中間隔c的項次
+print(list_test_2)
+
+print(len(list_test_2))                                                     #串列目前的數目
+print(min(list_test_1))                                                     #串列中的最小值
+print(max(list_test_1))                                                     #串列中的最大值
+
+list_test_1.append(0)                                                       #在串列最後加上括號內的值
+print(list_test_1)
+
+list_test_1.extend(list_extend_1)                                           #在串列最後加上括號內的串列
+print(list_test_1)
+
+list_test_1.insert(0,0)                                                     #在第a項前加上b值
+print(list_test_1)
+
+list_pop_1 = list_test_1.pop()                                              #將串列最後一項取出，可另存於成其他代數形式
+print(list_pop_1)
+print(list_test_1)
+
+list_test_1.remove(7)                                                       #將串列中的第n-1巷刪除
+print(list_test_1)
+
+list_test_1.reverse()                                                       #將串列倒轉
+print(list_test_1)
+
+list_test_1.sort()                                                          #將串列由小至大排列
+print(list_test_1)
+
+print()
 
 #append/insert
 list_2 = [0,1,2,3,4,5,6,7,8,9]
