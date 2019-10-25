@@ -237,6 +237,7 @@ print(grade_3[2][1]["奶茶"])
 grade_2 = range(2,9)
 print(grade_2)
 print(list(grade_2))
+print(list(grade_2)[2])
 print(range(2,9),end="\n\n")
 
 #for loop
@@ -256,9 +257,9 @@ for i in range(1,10):
 stage_1 = int(input("請輸入此樓層數："))
 for i in range(1,stage_1):
     if (i == 4):
-        continue
+        continue                                                            #continue為跳過此輪迴圈繼續執行
     elif(i == 26):
-        break
+        break                                                               #break為跳出迴圈繼續執行
     else:
         print("本層樓為：%3d 樓" % i,end="\n")
 
