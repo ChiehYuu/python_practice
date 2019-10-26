@@ -350,12 +350,26 @@ list_2.insert(3,11)
 print(list_2[3])
 
 #dict
+
 dict_1 = {"香蕉":20,"蘋果":45,"葡萄":60}
 print(dict_1["香蕉"])
 print(dict_1["葡萄"])
 dict_1["香蕉"] = 80
 print(dict_1["香蕉"])
 print(len(dict_1))
+
+dict_test_1 = {"joe":30,"mary":45,"geroge":50}
+print(len(dict_test_1))
+dict_test_2 = dict_test_1.copy()
+print(dict_test_2)
+dict_test_2.clear()
+print(dict_test_2)
+print(dict_test_1.get("joe"))
+
+
+
+
+
 
 
 #key value items get
