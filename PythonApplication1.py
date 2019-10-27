@@ -365,10 +365,16 @@ print(dict_test_2)
 dict_test_2.clear()
 print(dict_test_2)
 print(dict_test_1.get("joe"))
+print("joe" in dict_test_1)
+print("paul" in dict_test_1)
 
+dict_test_2 = dict_test_1.items()
+print(dict_test_2)
+dict_test_3 = dict_test_1.keys()
+print(dict_test_3)
 
-
-
+print(dict_test_1.setdefault("joe"))
+print(dict_test_1.values())
 
 
 
@@ -383,16 +389,5 @@ print(dict_1.get("香蕉"))
 print(dict_1.get("鳳梨",100))
 
 
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
 
 
