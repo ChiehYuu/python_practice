@@ -358,24 +358,28 @@ dict_1["香蕉"] = 80
 print(dict_1["香蕉"])
 print(len(dict_1))
 
-dict_test_1 = {"joe":30,"mary":45,"geroge":50}
-print(len(dict_test_1))
-dict_test_2 = dict_test_1.copy()
-print(dict_test_2)
-dict_test_2.clear()
-print(dict_test_2)
-print(dict_test_1.get("joe"))
-print("joe" in dict_test_1)
-print("paul" in dict_test_1)
+dictest_1 = {"joe":30,"mary":45,"geroge":50}
+print(len(dictest_1))
+dictest_2 = dictest_1.copy()
+print(dictest_2)
+dictest_2.clear()
+print(dictest_2)
+print(dictest_1.get("joe"))
+print("joe" in dictest_1)
+print("paul" in dictest_1)
 
-dict_test_2 = dict_1.items()
-print(dict_test_2)
-print(dict_1.items())
-dict_test_3 = dict_test_1.keys()
-print(dict_test_3)
-print(dict_test_1.key())
-print(dict_test_1.setdefault("joe"))
-print(dict_test_1.values())
+dictest_3 = dictest_1.items()
+print(dictest_3)
+print(dictest_1.items())
+
+
+print()
+
+dictest_4 = dictest_1.keys()
+print(dictest_4)
+
+print(dictest_1.setdefault("joe"))
+print(dictest_1.values())
 
 
 
