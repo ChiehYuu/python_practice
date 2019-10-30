@@ -368,15 +368,22 @@ print(dictest_1.get("joe"))
 print("joe" in dictest_1)
 print("paul" in dictest_1)
 
-dictest_3 = dictest_1.items()
+dictest_3 = list(dictest_1.items())
 print(dictest_3)
 print(dictest_1.items())
-
+print(type(dictest_3))
+print(type(dictest_1.items()))
 
 print()
 
-dictest_4 = dictest_1.keys()
+dictest_4 = list(dictest_1.keys())
 print(dictest_4)
+print(dictest_1.keys())
+print(type(dictest_4))
+print(type(dictest_1.keys()))
+
+
+
 
 print(dictest_1.setdefault("joe"))
 print(dictest_1.values())
