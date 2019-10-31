@@ -465,7 +465,11 @@ print()
 print("Lesson 2")
 print()
 
+#導入模組
+
 import os
+
+#建立mkdir、確認exist、刪除remove、重建rmdir目錄
 
 file = "myfile.txt"
 if os.path.exists(file):
@@ -473,7 +477,13 @@ if os.path.exists(file):
 else:
     print(file+"此檔案尚未建立！")
 
+print()
 
+os.mkdir("myDir")
+if os.path.exists("myDir"):
+    print("目錄已經建立！")
+else:
+    os.mkdir("mydir")
 
 
 
