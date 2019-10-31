@@ -479,15 +479,25 @@ else:
 
 print()
 
-os.mkdir("myDir")
+# os.mkdir("myDir")
 if os.path.exists("myDir"):
     print("目錄已經建立！")
 else:
-    os.mkdir("mydir")
+    os.mkdir("myDir")
+    print("目錄新建完成！")
+
+dir_file = "myDir"
+
+if os.path.exists(dir_file):
+    os.rmdir(dir_file)
+    print("目錄已重新建立完成！")
+else:
+    print(dir_file + "目錄未建立！")
 
 
 
-
+current_path =str(os.path.dirname("myDir"))
+print(current_path)
 
 
 
