@@ -349,7 +349,7 @@ print(list_2[10])
 list_2.insert(3,11)
 print(list_2[3])
 
-#dict
+#dict_test 包括dict的相關語法語關係
 
 dict_1 = {"香蕉":20,"蘋果":45,"葡萄":60}
 print(dict_1["香蕉"])
@@ -400,7 +400,9 @@ dictest_6 = dictest_1.items()
 for i,j in dictest_6:
     print("%-10s的座號為%3d" % (i,j))
 print()
-
+for i,j in dictest_3:
+    print("%-10s的座號為%3d" % (i,j))
+print()
 
 
 #key value items get
@@ -413,6 +415,7 @@ print()
 print(dict_1.get("香蕉"))
 print(dict_1.get("鳳梨",100))
 
+#自設函數
 
 
 
