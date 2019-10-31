@@ -2,6 +2,9 @@
 
 #Lesson1 Variables Testing
 
+print("Lesson1")
+print()
+
 #基礎代數－數值
 price_1 = int(80)                                                                   #數值變數(整數)
 price_2 = 80.0                                                                      #數值變數(浮點數)
@@ -431,13 +434,44 @@ print()
 #練習六：溫度轉換函數
 def ctof(c):
     f = float()
-    f = 1.4*c + 32 
+    f = 1.8*c + 32 
     return f
 ccccc = float(input("請輸入目前的攝氏溫度："))
 print("目前攝氏溫度為%6.2f，而華氏溫度為%6.2f" % (ccccc,ctof(ccccc)))
 print()
 
+#練習七：不定變數函數
+def func_grade(*score):
+    sum = 0
 
+    for i in score:
+        sum += i
+
+    print("王小明的總分為%6.2f" % (sum))
+
+    return sum
+
+func_grade(1,2,3,4,5,6,7,8,9)
+
+print()   
+print()
+
+##############################################################################################
+##############################################################################################
+##############################################################################################
+
+#Lesson2 import files
+
+print("Lesson 2")
+print()
+
+import os
+
+file = "myfile.txt"
+if os.path.exists(file):
+    os.remove(file)
+else:
+    print(file+"此檔案尚未建立！")
 
 
 
