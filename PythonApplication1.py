@@ -382,11 +382,24 @@ print(dictest_1.keys())
 print(type(dictest_4))
 print(type(dictest_1.keys()))
 
-
-
-
-print(dictest_1.setdefault("joe"))
+dictest_5 = list(dictest_1.values())
+print(dictest_5)
 print(dictest_1.values())
+print(type(dictest_5))
+print(type(dictest_1.values()))
+print()
+for i in range(len(dictest_4)):
+    print("%-10s的座號為%3d" % (dictest_4[i],dictest_5[i]))
+
+print()
+print(dictest_1.setdefault("joe"))
+print()
+
+
+dictest_6 = dictest_1.items()
+for i,j in dictest_6:
+    print("%-10s的座號為%3d" % (i,j))
+print()
 
 
 
