@@ -416,6 +416,41 @@ print(dict_1.get("香蕉"))
 print(dict_1.get("鳳梨",100))
 
 #自設函數
+def SayHello():
+    print("Hello World !!!")
+SayHello()
+
+def GetArea(width,height):
+    area = width * height
+    return area
+aaaaa = float(input("請輸入寬度："))
+bbbbb = float(input("請輸入長度："))
+print("此處的面積為：%8.3f平方公分" % (GetArea(aaaaa,bbbbb)))
+print()
+
+#練習六：溫度轉換函數
+def ctof(c):
+    f = float()
+    f = 1.4*c + 32 
+    return f
+ccccc = float(input("請輸入目前的攝氏溫度："))
+print("目前攝氏溫度為%6.2f，而華氏溫度為%6.2f" % (ccccc,ctof(ccccc)))
+print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
