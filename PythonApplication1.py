@@ -468,6 +468,7 @@ print()
 #導入模組
 
 import os
+import os.path
 
 #建立mkdir、確認exist、刪除remove、重建rmdir目錄
 
@@ -494,17 +495,20 @@ if os.path.exists(dir_file):
 else:
     print(dir_file + "目錄未建立！")
 
+#system syntax
 
-
-current_path =str(os.path.dirname("myDir"))
+current_path =os.path.dirname("myDir")
 print(current_path)
 
+#python 內建file read/write/append
 
+content_1 = '''Hello Python
+這是中文測試
+Welcome
+'''
 
-
-
-
-
-
+file_test = open('File1.txt','w')
+file_test.write(content_1)
+file_test.close()
 
 
