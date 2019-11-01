@@ -1,5 +1,5 @@
 #This code is just for learning 
-
+'''
 #Lesson1 Variables Testing
 
 print("Lesson1")
@@ -452,9 +452,7 @@ def func_grade(*score):
     return sum
 
 func_grade(1,2,3,4,5,6,7,8,9)
-
-print()   
-print()
+'''
 
 ##############################################################################################
 ##############################################################################################
@@ -469,6 +467,9 @@ print()
 
 import os
 import os.path
+
+#清除終端機畫面
+os.system("cls")
 
 #建立mkdir、確認exist、刪除remove、重建rmdir目錄
 
@@ -492,23 +493,17 @@ dir_file = "myDir"
 if os.path.exists(dir_file):
     os.rmdir(dir_file)
     print("目錄已重新建立完成！")
+    print(os.path.abspath(dir_file))
 else:
     print(dir_file + "目錄未建立！")
+    print(os.path.abspath(dir_file))
 
 #system syntax
 
-current_path =os.path.dirname("myDir")
+current_path =os.path.dirname("ospath.py")
 print(current_path)
 
 #python 內建file read/write/append
 
-content_1 = '''Hello Python
-這是中文測試
-Welcome
-'''
-
-file_test = open('File1.txt','w')
-file_test.write(content_1)
-file_test.close()
-
-
+filename = os.path.abspath("ospath.py")
+print(filename)
