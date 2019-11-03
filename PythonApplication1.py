@@ -505,11 +505,3 @@ print(current_path)
 
 #python 內建file read/write/append
 
-filename = os.path.abspath("ospath.py")
-print(filename)
-print(os.path.getsize("ospath.py"))
-print(os.path.basename("ospath.py"))
-print(os.path.dirname("ospath.py"))
-print(os.path.isdir("ospath.py"))
-print(os.path.split("ospath.py"))
-print(os.path.splitdrive("ospath.py"))
