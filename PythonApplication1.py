@@ -505,3 +505,11 @@ print(current_path)
 
 #python 內建file read/write/append
 
+def Readdata():
+    with open('password'.txt,'r',encoding = 'UFT-8-sig') as f:
+        filename = f.read()
+        if filedata != "":
+            data = ast.literal_eval(filedata)
+            return data
+        else:
+            return dict()
