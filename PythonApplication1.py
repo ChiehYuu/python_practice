@@ -458,3 +458,15 @@ func_grade(1,2,3,4,5,6,7,8,9)
 ##############################################################################################
 ##############################################################################################
 
+import sqlite3
+conn = sqlite3.connect('Sqlite01.sqlite')
+cursor = conn.cursor()
+sqlstr = 'create table if not exists table01 \
+         ("num" interger primary key not null , "tel" text)'
+cursor.execute(sqlstr)
+
+sqlstr='insert into table01 values(1,"02-1234567")'
+cursor.execute(sqlstr)
+
+conn.commit() # 主動更新
+conn.close()  # 關閉資料庫連
