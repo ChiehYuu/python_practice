@@ -470,3 +470,4 @@ cursor.execute(sqlstr)
 
 conn.commit() # 主動更新
 conn.close()  # 關閉資料庫連
+
