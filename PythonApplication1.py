@@ -458,16 +458,15 @@ func_grade(1,2,3,4,5,6,7,8,9)
 ##############################################################################################
 ##############################################################################################
 
-import sqlite3
-conn = sqlite3.connect('Sqlite01.sqlite')
-cursor = conn.cursor()
-sqlstr = 'create table if not exists table01 \
-         ("num" interger primary key not null , "tel" text)'
-cursor.execute(sqlstr)
 
-sqlstr='insert into table01 values(1,"02-1234567")'
-cursor.execute(sqlstr)
+from urllib.parse import urlparse
 
-conn.commit() # 主動更新
-conn.close()  # 關閉資料庫連
+url = 'http://taqm.epa.gov.tw:80/pm25/tw/PM25A.aspx?area=1'
+o = urlparse(url)
+print(o) 
 
+print("scheme={}".format(o.scheme)) # http
+print("netloc={}".format(o.netloc)) # taqm.epa.gov.tw
+print("port={}".format(o.port))     # 80
+print("path={}".format(o.path))     # /pm25/tw/PM25A.aspx
+print("query={}".format(o.query))   # area=1
