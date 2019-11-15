@@ -471,8 +471,3 @@ print("port={}".format(o.port))     # 80
 print("path={}".format(o.path))     # /pm25/tw/PM25A.aspx
 print("query={}".format(o.query))   # area=1
 
-import requests
-url = 'http://www.e-happy.com.tw'
-html = requests.get(url)
-html.encoding="utf-8"
-print(html.text)
