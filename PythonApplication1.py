@@ -459,9 +459,12 @@ func_grade(1,2,3,4,5,6,7,8,9)
 ##############################################################################################
 
 import os
-os.mkdir("MyDir")
 
-
+dir = "mydir"
+if not os.path.exists(dir):
+    os.mkdir(dir)
+else:
+    print(dir + "已經建立!")
 
 
 
