@@ -466,5 +466,9 @@ if not os.path.exists(dir):
 else:
     print(dir + "已經建立!")
 
+def stuff():
+    print('Hello')
+    return print('World')
 
+stuff()
 
