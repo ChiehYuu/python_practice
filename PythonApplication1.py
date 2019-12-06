@@ -465,32 +465,18 @@ if not os.path.exists(dir):
     os.mkdir(dir)
 else:
     print(dir + "已經建立!")
-
-def stuff():
-    print('Hello')
-    return print('World')
-
-stuff()
-
-data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
-pos = data.find('.')
-print(data[pos:pos+3])
-
-# Use the file name mbox-short.txt as the file name
+######################################
 fname = input("Enter file name: ")
+if len(fname) < 1 : fname = "mbox-short.txt"
+
 fh = open(fname)
-sum = 0
 count = 0
-for line in fh:
-    if not line.startswith("X-DSPAM-Confidence:") : 
-        continue   
-    num = line.find(":")
-    x = float(line[num+1:])
-    sum = sum + x
-    count = count + 1    
 
-avg = sum / count
+for words in fh:
+    words = words.rstrip().split()
+    if len(words) < 2 or words[0] != 'From'  :
+        continue
+    print(words[1])
+    count = count + 1
 
-print("Average spam confidence:",avg)
-
-
+print("There were", count, "lines in the file with From as the first word")
