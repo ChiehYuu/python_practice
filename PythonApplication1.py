@@ -466,17 +466,30 @@ if not os.path.exists(dir):
 else:
     print(dir + "已經建立!")
 ######################################
-fname = input("Enter file name: ")
-if len(fname) < 1 : fname = "mbox-short.txt"
-
-fh = open(fname)
-count = 0
-
-for words in fh:
+name = input("Enter file:")
+if len(name) < 1 : name = "mbox-short.txt"
+handle = open(name)
+ddd = dict()
+most_count = -1
+theword = None
+for words in handle:
     words = words.rstrip().split()
-    if len(words) < 2 or words[0] != 'From'  :
+    if len(words)<1 or words[0] != "From":
         continue
-    print(words[1])
-    count = count + 1
+    else:
+        ddd[words[1]] = ddd.get(words[1],0)+1
+    
+for kkk,vvv in ddd.items():
+    if vvv > most_count:
+        most_count = vvv
+        theword = kkk
 
-print("There were", count, "lines in the file with From as the first word")
+print(theword,most_count)    
+
+
+
+
+
+
+
+
