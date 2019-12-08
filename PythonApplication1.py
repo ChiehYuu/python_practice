@@ -477,14 +477,14 @@ for words in handle:
     if len(words)<1 or words[0] != "From":
         continue
     else:
-        ddd[words[1]] = ddd.get(words[1],0)+1
+        temp = words[5].split(':')
+        ddd[temp[0]] = ddd.get(temp[0],0)+1
     
-for kkk,vvv in ddd.items():
-    if vvv > most_count:
-        most_count = vvv
-        theword = kkk
+print ( sorted ( [ (vvv,kkk) for kkk,vvv in ddd.items()]))
+    
+for k,v in sorted(ddd.items()):
+    print(k,v)
 
-print(theword,most_count)    
 
 
 
