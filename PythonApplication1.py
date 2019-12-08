@@ -478,10 +478,7 @@ for words in handle:
         continue
     else:
         temp = words[5].split(':')
-        ddd[temp[0]] = ddd.get(temp[0],0)+1
-    
-print ( sorted ( [ (vvv,kkk) for kkk,vvv in ddd.items()]))
-    
+        ddd[temp[0]] = ddd.get(temp[0],0)+1    
 for k,v in sorted(ddd.items()):
     print(k,v)
 
