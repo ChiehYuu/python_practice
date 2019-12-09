@@ -467,7 +467,7 @@ else:
     print(dir + "已經建立!")
 ######################################
 name = input("Enter file:")
-if len(name) < 1 : name = "mbox-short.txt"
+if len(name) < 1 : name = "regex_sum_335075"
 handle = open(name)
 ddd = dict()
 most_count = -1
@@ -481,7 +481,6 @@ for words in handle:
         ddd[temp[0]] = ddd.get(temp[0],0)+1    
 for k,v in sorted(ddd.items()):
     print(k,v)
-
 
 
 
