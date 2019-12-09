@@ -15,4 +15,4 @@ for line in handle:
             num_list.append(float(i))
             
 print(num_list)      
-print(sum(num_list))
+print('Sum:',sum(num_list))
