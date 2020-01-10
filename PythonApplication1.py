@@ -1,6 +1,9 @@
 #This code is just for learning 
-
+'''
 #Lesson1 Variables Testing
+
+print("Lesson1")
+print()
 
 #基礎代數－數值
 price_1 = int(80)                                                                   #數值變數(整數)
@@ -349,7 +352,7 @@ print(list_2[10])
 list_2.insert(3,11)
 print(list_2[3])
 
-#dict
+#dict_test 包括dict的相關語法語關係
 
 dict_1 = {"香蕉":20,"蘋果":45,"葡萄":60}
 print(dict_1["香蕉"])
@@ -358,18 +361,51 @@ dict_1["香蕉"] = 80
 print(dict_1["香蕉"])
 print(len(dict_1))
 
-dict_test_1 = {"joe":30,"mary":45,"geroge":50}
-print(len(dict_test_1))
-dict_test_2 = dict_test_1.copy()
-print(dict_test_2)
-dict_test_2.clear()
-print(dict_test_2)
-print(dict_test_1.get("joe"))
+dictest_1 = {"joe":30,"mary":45,"geroge":50}
+print(len(dictest_1))
+dictest_2 = dictest_1.copy()
+print(dictest_2)
+dictest_2.clear()
+print(dictest_2)
+print(dictest_1.get("joe"))
+print("joe" in dictest_1)
+print("paul" in dictest_1)
+
+dictest_3 = list(dictest_1.items())
+print(dictest_3)
+print(dictest_1.items())
+print(type(dictest_3))
+print(type(dictest_1.items()))
+
+print()
+
+dictest_4 = list(dictest_1.keys())
+print(dictest_4)
+print(dictest_1.keys())
+print(type(dictest_4))
+print(type(dictest_1.keys()))
+
+dictest_5 = list(dictest_1.values())
+print(dictest_5)
+print(dictest_1.values())
+print(type(dictest_5))
+print(type(dictest_1.values()))
+print()
+for i in range(len(dictest_4)):
+    print("%-10s的座號為%3d" % (dictest_4[i],dictest_5[i]))
+
+print()
+print(dictest_1.setdefault("joe"))
+print()
 
 
-
-
-
+dictest_6 = dictest_1.items()
+for i,j in dictest_6:
+    print("%-10s的座號為%3d" % (i,j))
+print()
+for i,j in dictest_3:
+    print("%-10s的座號為%3d" % (i,j))
+print()
 
 
 #key value items get
@@ -382,17 +418,74 @@ print()
 print(dict_1.get("香蕉"))
 print(dict_1.get("鳳梨",100))
 
+#自設函數
+def SayHello():
+    print("Hello World !!!")
+SayHello()
 
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
-#test for mac air 1025
+def GetArea(width,height):
+    area = width * height
+    return area
+aaaaa = float(input("請輸入寬度："))
+bbbbb = float(input("請輸入長度："))
+print("此處的面積為：%8.3f平方公分" % (GetArea(aaaaa,bbbbb)))
+print()
+
+#練習六：溫度轉換函數
+def ctof(c):
+    f = float()
+    f = 1.8*c + 32 
+    return f
+ccccc = float(input("請輸入目前的攝氏溫度："))
+print("目前攝氏溫度為%6.2f，而華氏溫度為%6.2f" % (ccccc,ctof(ccccc)))
+print()
+
+#練習七：不定變數函數
+def func_grade(*score):
+    sum = 0
+
+    for i in score:
+        sum += i
+
+    print("王小明的總分為%6.2f" % (sum))
+
+    return sum
+
+func_grade(1,2,3,4,5,6,7,8,9)
+'''
+
+##############################################################################################
+##############################################################################################
+##############################################################################################
+
+import os
+
+dir = "mydir"
+if not os.path.exists(dir):
+    os.mkdir(dir)
+else:
+    print(dir + "已經建立!")
+######################################
+name = input("Enter file:")
+if len(name) < 1 : name = "regex_sum_335075"
+handle = open(name)
+ddd = dict()
+most_count = -1
+theword = None
+for words in handle:
+    words = words.rstrip().split()
+    if len(words)<1 or words[0] != "From":
+        continue
+    else:
+        temp = words[5].split(':')
+        ddd[temp[0]] = ddd.get(temp[0],0)+1    
+for k,v in sorted(ddd.items()):
+    print(k,v)
+
+
+
+
+
+
 
 
